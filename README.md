@@ -1,3 +1,3 @@
-## CICS190 JAVA PROGRAMMING
+## CISC190 JAVA PROGRAMMING
 ---
 Assignments and Programs
