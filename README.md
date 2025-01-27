@@ -1,3 +1,3 @@
 ## CISC190 JAVA PROGRAMMING
 ---
-Assignments and Programs
+Coursework includes assignments and programs created in CISC190
