@@ -1,0 +1,54 @@
+/*
+
+ArrayList<String> name = new ArrayList<String>(); // can declare as ArrayList<String> name = new ArrayList<>();
+
+name.add("Jim"); <- to add to arraylist 
+name.remove(1); <- removes obj at index 1 of name array
+name.add(1, "Kim"); <- add "Kim" to index 1
+name.set(2, "Java"); <- replaces index 2 with "Java"
+
+
+
+double [] testscores = {80, 56, 96, 52, 45}
+
+public double getLowestScore()
+{
+    double lowest;
+
+    lowest = testScores[0];
+
+    for (int i = 1; i < testScores.length; i++)
+    {
+        if (testScores[i] < lowest) 
+        {
+            lowest = testScores[i];
+        }
+    }
+    return lowest;
+}
+
+lowest is set to 80; then begins at 56 and checks to see if it's lower than 80. if true, it sets the current number to the lowest var.
+
+public double getAverage(){
+    double total = 0;
+    double lowest;
+    double average;
+
+    if (testscores.length < 2)
+    {
+    
+        System.out.println("Error: You must have at least 2 scores")
+        average = 0;
+    } 
+    else 
+    {
+        for (double score: testScores)
+        {
+            total += score;
+        }
+
+        lowest = getLowestScore();
+        total -= lowest;
+        average = total / (testScores.length - 1)
+    }
+}

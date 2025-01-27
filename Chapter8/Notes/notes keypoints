@@ -1,0 +1,91 @@
+/** 
+
+when you declare a variable inside a class, usually it creates it's own version of those variables everytime an instance of the class is made
+a class variable is when the variable is shared by all objects of that class
+
+these are going to be shared by each object
+private static String color = "blue"
+private static int count = 0;
+
+these will be different from each other per instance
+private int length;
+private int width; 
+
+static variables only execute once
+
+
+STATIC METHODS:
+className.methodName(param); <- allows to use method without creating an instance of the class
+
+static methods cannot refer to non static data members(ex: variables)
+int x; <- error
+static int x; <- okay
+
+static methods can only call other static methods
+
+
+PASSING OBJECT AS PARAM TO METHODS:
+public static void changeRec(Rectangle r)
+{
+    r.setLength(10);
+    r.setWidth(30);
+}
+data members of object changes permanently
+
+static methods created so that static main method can call them "public static void main..."
+
+
+
+there is a default toString method for classes but you should rewrite the method 
+* rewrite toString() method to show values of data members of class
+
+public String toString(){
+    return "Name: " + name +
+           "\nID Number: " + id +
+           "\nAnother Data Member: " + value;
+
+}
+
+
+to compare 2 objects, don't use ==
+have to write a method to compare
+public boolean equals(Rectangle r){
+    if (this.length == r.getLength() && this.width == r.getWidth()){
+        return true;
+    else
+        return false;
+    }    
+
+}
+
+this.obj refers to the obj's data members
+
+Rectangle (int length, int width) {
+    this.length = length; <- this obj's length will = to the parameter's length
+    this.width = width; 
+}   
+
+
+copy constructor
+Rectangle (Rectangle r){
+    length = r.length;
+    width = r.width;
+}
+
+
+aggregation: when defining a class that uses other class' data members
+
+method call chaining:
+    class.methodName()
+         .methodName()
+         .methodName();
+
+    class.getInstructor()
+         .getName()
+         .toUpperCase();
+
+
+
+
+
+**/

@@ -1,0 +1,32 @@
+To program a large problem, the solution is to break it up into smaller manageable tasks. write method for each task.
+A method is a grouping of lines of code that perform a task. 
+Some methods return value and some don't.
+Some methods receive input and some don't.
+
+Method Header
+
+public static void main (String [] args){
+    // call method
+    // double y = findSquare(9);
+    // 
+    // or system.out.print(method(parameter))
+
+    double num = 3.4;
+    System.out.print("num is" + num); // this is 3.4 
+    callByValue(num);
+    System.out.print("num is" + num); // 3.4
+}
+
+
+public static double findSquare(int x) {
+    return Math.pow(x, 2.0);
+}
+
+
+public static void callByValue(double x){
+    // change x 
+    x = 68.01
+    System.out.println("x value in the method is: " + x);  // 68.01
+    // when you pass a value or parameter into a method, the change in value of that parameter is not permanent so it stays the same as before. (3.4 before and 3.4 after ... not 68.01) PASS BY VALUE
+    // PASS BY REFERENCE - instead of sending a copy of the parameter, you send the address of the parameter 
+}  

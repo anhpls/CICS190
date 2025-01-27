@@ -1,0 +1,75 @@
+/* CH 4 Notes */ 
+
+
+/* While Loop
+
+int number;
+
+// Create a Scanner object for keyboard
+Scanner keyb = new Scanner(System.in);
+
+// Get a number from the user
+System.out.print("Enter a number from 1-100: ");
+number = keyb.nextInt();
+
+// Validate the input
+while (number < 1 loop || number > 100)
+{
+    System.out.println("Invalid input. Please try again.");
+    number = keyb.nextInt();
+} 
+
+*/
+
+
+
+
+/* Do-While Loop: a post test loop
+ 
+int x = 1;
+do {                            the do function executes once and then if while is true, the do function loops
+    System.out.println(x);
+}
+while (x < 0)
+*/
+
+
+
+
+/*  For Loop: use if you know how many times you are going to execute
+    
+    // for (initialize; condition; update){}
+    for (var i = 0; i < 10; i++){
+        System.out.println("Woo");
+    }
+
+   
+*/
+
+
+
+/* User Controlled Loop Example
+ 
+    int score1, score2, score3;
+    double average;
+    char repeat;            To hold 'y' or 'n'
+    String input;
+    ...
+    ...
+    do { 
+    get score inputs 
+    \\ consume the remaining newLine. use this when reading number inputs and then reading string input to consume the \n leftovers
+    keyboard.nextLine();
+    prompt if user wants to continue?
+    scanner
+    input = get next line and then
+    repeat = get charAt 0 index
+    repeat = Y
+
+    }
+        while (repeat == 'Y' || repeat == 'y');
+        
+    }
+ */
+
+// sentinel valaue is a value that is not a valid input; used to terminate a loop, typically -1 is used

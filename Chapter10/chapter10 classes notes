@@ -1,0 +1,70 @@
+/** 
+
+public abstract class Student {
+    String name;
+    int creditsDone;
+
+    Student(String name, int cd)
+    {
+        this.name = name;
+        creditsDone = cd;
+    }
+
+    public int getCreditsDone () { return creditsDone;}
+
+    public String toString()
+    {
+        String s = name " " + creditsDone + " ";
+    }
+
+}
+
+
+new file for superclass/subclass(child) that extends abstract class(parent):
+
+public class CSstudent extends Student(){
+    final int TOTALCREDITS = 130;
+    CSstudent(String name, int creditsDone, int a)
+    {
+        super(name, creditsDone);
+        age = a;
+    }
+
+    public String getAdvisor()
+    {return "Prof Smith";}
+
+    public int creditsLeft(){
+        return totalCredits - getCreditsDone();
+    }
+    
+    public void display() {
+        System.out.println(s.getCreditsDone());
+    }
+}
+
+new file for demo: 
+public class Chapter10Demo {
+
+    public static void main (String [] args){
+        Student s = new Student("John", 50); // gives error bc student is abstract/superclass
+        Student s; // declaring is okay.
+        s = newCSstudent("Tim", 45, 20); // after decalring, then assign subclass to variable
+        System.out.println(s.creditsLeft());
+        Student[] s2 = new Student[2]; // array of students
+        s2[0] = new CSstudent("Mary", 90, 19);
+        s2[1] = new CSstudent("Grad Alex", 125, 30);
+        System.out.println(s.toString()); // works
+        System.out.println(s.getAdvisor()); // getAdvisor is a subclass method
+
+        CSstudent cs1 = new CSstudent("Kim", 80, 25); // this subclass works
+        cs1.display();
+        System.out.println(Display.state)
+    }
+}
+
+abstract class cannot be created an instance of
+abstract classes have abstract methods
+
+declaring an abstract class (parent) into variable allows creation of sub class (child) objects allows for polymorphic behavior.
+
+**/

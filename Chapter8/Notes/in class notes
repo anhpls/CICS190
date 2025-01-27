@@ -1,0 +1,90 @@
+/*
+
+Static field & methods
+
+Class Rectangle {
+    private double length;          <- static
+    private double width;           <- static
+    private static String color;
+
+    r1.setcolor("blue");
+    r2.setcolor("red");
+
+    public static double area()
+    {
+        return length * width;
+    }
+
+    Rectangle.area() <- can be called without creating a new rectangle obj
+    static methods can only use static fields
+
+    Math.pow(2, 2); <- pow() is a static method in the Class Math
+    static objects don't need to call the object to use its methods
+
+    Rectangle.main
+    google: how to access a static variable
+
+
+    public class Countable
+    {
+        private static int instanceCount = 0; // this line of code runs only once; initialized bc it is used by other things in the class
+    }
+
+    public Countable()
+    {
+        instanceCount++;
+    }
+    public int getInstanceCount()
+    {
+        return instanceCount;
+    }
+
+    static methods must only access static fields but public methods can access static methods?
+
+    public class CountDemo()
+    {
+        public static void main(String[] args) 
+        {
+            Countable c1 = new Countable();         
+            System.out.println(c1.getInstanceCount()); <- results in 1 bc ++
+
+            Countable c2 = new Countable();
+            System.out.println(c1.getInstanceCount()); <- still calling c1 -- will result in 2 bc ++ bc it shows that the variable is shared in the class
+        }   
+    }
+
+    static methods can be called w/o creating instance of the obj
+    public static double milesToKilometers(double m)
+    {
+        return m / 1005;
+    }
+
+    demo:
+    kilometers = Metric.milesToKilometers(miles);
+
+
+    Class Rectangle
+    {
+        private double length;
+        private double width;
+
+        main ()
+        {
+            Rectangle r = new Rectangle(2,3)
+            UpdateRec(r)
+        }
+
+
+        public void UpdateRec(Rectangle r)          
+        {
+    
+        }
+    }
+
+reminder that reference variables deal with addresses rather than actual obj
+pass by value and pass by reference
+pass by reference passes a copy of the parameter
+    r = new Rectangle(22, 55); <-- created a new obj, made r point to t his, and change the address of r
+    can't change r but can use methods of it
+    r.setLength(10);
+    r.setWidth(20);

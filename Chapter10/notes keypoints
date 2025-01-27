@@ -1,0 +1,25 @@
+/** 
+
+
+inherit a class' methods and fields by "extends"
+
+public Cube(double len, double w, double h)
+{
+    // call the superclass constructor
+    super(len, w);
+
+    // set the height
+    height = h;
+}
+
+
+@Override                                   <- overwrite the method of this superclass with this subclass method
+public void setScore(double s)
+{
+    rawScore = s;
+    super.setScore(rawScore * percentage);  <- super means use the method from the superclass, not this subclass; if use the new one, don't put super.methodName
+}
+
+
+cannot make object from abstract class
+**/

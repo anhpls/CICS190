@@ -1,0 +1,24 @@
+/*
+
+ascending and descending
+
+public static void selectionSort(int[] array) // 5 6 4 2 8
+{
+    int startScan, index, minIndex, minValue;
+
+    for (startScan = 0; startScan < (array.length - 1); startScan++)
+    {
+        minIndex = startScan; // beginning is 0 
+        minValue = array[startScan]; // 5
+        for (index = startScan + 1; index < array.length; index++) // starts at index = 1
+        {
+            if (array[index] < minValue) // arrayIndex (6) < (5) then index goes to #4; is 4 < 5? 
+            {
+                minValue = array[index]; //
+                minIndex = index; 
+            }
+        }
+        array[minIndex] = array[startScan]; 
+        array[startScan] = minvalue; 
+    }
+}

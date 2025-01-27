@@ -1,0 +1,15 @@
+/**
+
+
+public interface Display {
+
+    public void display();
+}
+
+class Student implements Display {
+    String name;
+    
+    Student (String name) 
+}
+
+**/ 
