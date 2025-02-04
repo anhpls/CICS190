@@ -1,4 +1,4 @@
-# CISC190 Coursework
+# CISC190 Java Programming Coursework
 
 This repository contains coursework and projects from **CISC 190**, focused on foundational programming concepts using **Java**.
 
